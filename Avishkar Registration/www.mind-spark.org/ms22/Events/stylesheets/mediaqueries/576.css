@@ -1,0 +1,609 @@
+:root {
+  --amuzia-color: #8758ff;
+  --avionica-color: #49bfab;
+  --codifica-color: #d36b00;
+  --illuminati-color: #5cb8e4;
+  --hackathon-color: #61d38b;
+  --logica-color: #ffc23c;
+  --potentia-color: #2666cf;
+  --prodigium-color: #fa2fb5;
+  --robotica-color: #7de5ed;
+  --struktura-color: #d3eca7;
+  --substantia-color: #df3e3e;
+  --voltus-color: #2666cf;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mainText .mainTitle {
+    font-size: 18vh;
+    letter-spacing: 2vh;
+  }
+
+  .mainText img {
+    height: 8vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .moduleDescription {
+    text-align: center;
+    font-size: 2vh;
+  }
+
+  .module {
+    margin-bottom: 10vh;
+  }
+
+  .module-top {
+    flex-direction: column;
+  }
+
+  .module-logo {
+    display: none;
+  }
+
+  .expander {
+    margin-top: 4vh;
+    justify-content: center;
+  }
+
+  .expander-button {
+    text-align: center;
+    font-size: 4vh;
+    width: 40%;
+  }
+
+  .collapser {
+    margin-top: 4vh;
+    justify-content: center;
+    margin-bottom: 4vh;
+  }
+
+  .collapsing-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+  }
+
+  .subeventName {
+    font-size: 5vh;
+    letter-spacing: 1vh;
+  }
+
+  .subeventDescription {
+    font-size: 1.5vh;
+  }
+
+  .explore {
+    margin-top: 6vh;
+  }
+
+  .explore-button {
+    font-size: 1.8vh;
+  }
+
+  .explore img {
+    height: 3vh;
+  }
+
+  .rotating-text {
+    font: normal 30px/40px Montserrat, sans-serif;
+    color: #999;
+  }
+
+  .rotating-text p {
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .rotating-text b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+  }
+
+  .rotating-text .innerrotating-text {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  .stars-md:before,
+  .stars-md:after {
+    display: none;
+  }
+
+  .stars-lg:before,
+  .stars-lg:after {
+    display: none;
+  }
+
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    20% {
+      top: -40px;
+    }
+    40% {
+      top: -80px;
+    }
+    60% {
+      top: -120px;
+    }
+    80% {
+      top: -160px;
+    }
+  }
+
+  /* Subevents Border Animation */
+  :root {
+    --color-first: hsl(0, 0%, 100%);
+    --color-second: #000000;
+    --color-third: #000000;
+    --color-forth: hsl(0, 0%, 100%);
+    --block-width: 50vw;
+    --block-height: 50vh;
+    --border-width: 8px;
+    --border-radius-outer: 0px;
+    --border-radius-inner: calc(var(--border-radius-outer) / 2);
+    --font-plain: "IBM Plex Sans", sans-serif;
+    --font-special: "Fredoka One", sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+
+  .subevent-border-container {
+    width: var(--block-width);
+    height: var(--block-height);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+    border-radius: var(--border-radius-outer);
+    margin-bottom: 10%;
+    border: 1px solid white;
+  }
+
+  .subevent-border-container:hover {
+    transform: scale(1.1);
+    --color-first: hsl(0, 0%, 100%);
+    --color-second: hsl(0, 0%, 100%);
+    --color-third: hsl(0, 0%, 100%);
+    --color-forth: hsla(0, 0%, 100%, 0);
+  }
+
+  .subevent-border-animation {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: o-rotate-360 linear 8s infinite;
+    animation: o-rotate-360 linear 8s infinite;
+  }
+
+  .subevent-border-animation span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(-50%, -50%);
+  }
+
+  .subevent-border-animation span:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+  }
+
+  .subevent-border-animation span:first-child {
+    background: var(--color-first);
+  }
+
+  .subevent-border-animation span:first-child:after {
+    background: var(--color-second);
+  }
+
+  .subevent-border-animation span:last-child {
+    background: var(--color-third);
+  }
+
+  .subevent-border-animation span:last-child:after {
+    background: var(--color-forth);
+  }
+
+  .subevent {
+    width: calc(100% - var(--border-width));
+    height: calc(100% - var(--border-width));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    padding: 1.2rem 1rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: var(--border-radius-inner);
+  }
+
+  @-webkit-keyframes o-rotate-360 {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes o-rotate-360 {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #amuzia .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--amuzia-color);
+    opacity: 1;
+  }
+
+  #amuzia .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-amuzia;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-amuzia {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--amuzia-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #avionica .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--avionica-color);
+    opacity: 1;
+  }
+
+  #avionica .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-avionica;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-avionica {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--avionica-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #codifica .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--codifica-color);
+    opacity: 1;
+  }
+
+  #codifica .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-codifica;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-codifica {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--codifica-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #codifica .moduleName {
+    font-size: 7vh;
+  }
+
+  #illuminati .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--illuminati-color);
+    opacity: 1;
+  }
+
+  #illuminati .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-illuminati;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-illuminati {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--illuminati-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #hackathon .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--hackathon-color);
+    opacity: 1;
+  }
+
+  #hackathon .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-hackathon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-hackathon {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--hackathon-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #logica .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--logica-color);
+    opacity: 1;
+  }
+
+  #logica .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-logica;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-logica {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--logica-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #potentia .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--potentia-color);
+    opacity: 1;
+  }
+
+  #potentia .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-potentia;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-potentia {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--potentia-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #prodigium .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--prodigium-color);
+    opacity: 1;
+  }
+
+  #prodigium .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-prodigium;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-prodigium {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--prodigium-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #robotica .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--robotica-color);
+    opacity: 1;
+  }
+
+  #robotica .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-robotica;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-robotica {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--robotica-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #struktura .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--struktura-color);
+    opacity: 1;
+  }
+
+  #struktura .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-struktura;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-struktura {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--struktura-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #substantia .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--substantia-color);
+    opacity: 1;
+  }
+
+  #substantia .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-substantia;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-substantia {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--substantia-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+
+  #voltus .moduleName {
+    text-align: center;
+    font-size: 13vh;
+    letter-spacing: 1.5vh;
+    -webkit-text-fill-color: var(--voltus-color);
+    opacity: 1;
+  }
+
+  #voltus .expander-button {
+    text-align: center;
+    font-size: 2vh;
+    width: 30%;
+    animation-name: scaleandglow-voltus;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes scaleandglow-voltus {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      background-color: var(--voltus-color);
+      color: #000;
+      transform: scale(1.1);
+    }
+  }
+}

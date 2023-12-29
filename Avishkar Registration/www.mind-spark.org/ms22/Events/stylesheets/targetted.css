@@ -1,0 +1,97 @@
+@media (min-width: 1400px) {
+  #delta-sigma-pi .subeventName {
+    font-size: 6.5vh;
+  }
+
+  #integration-bee .subeventName {
+    font-size: 6.5vh;
+  }
+
+  #bridge-the-gap .subeventName {
+    font-size: 6.6vh;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #contraption .subeventName {
+    font-size: 6vh;
+  }
+
+  #codejunkie .subeventName {
+    font-size: 6vh;
+  }
+
+  #techdebait .subeventName {
+    font-size: 5.5vh;
+  }
+
+  #delta-sigma-pi .subeventName {
+    font-size: 5vh;
+  }
+
+  #integration-bee .subeventName {
+    font-size: 5vh;
+  }
+
+  #sherlocked .subeventName {
+    font-size: 6vh;
+  }
+
+  #bridge-the-gap .subeventName {
+    font-size: 5.5vh;
+  }
+
+  #ontheetch .subeventName {
+    font-size: 5.5vh;
+  }
+
+  #techescape .subeventName {
+    font-size: 5.8vh;
+  }
+
+  #circuitfixer .subeventName {
+    font-size: 5.5vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contraption .subeventName {
+    font-size: 3.5vh;
+  }
+
+  #codejunkie .subeventName {
+    font-size: 3.2vh;
+  }
+
+  #techdebait .subeventName {
+    font-size: 3.2vh;
+  }
+
+  #delta-sigma-pi .subeventName {
+    font-size: 2.7vh;
+  }
+
+  #integration-bee .subeventName {
+    font-size: 2.7vh;
+  }
+
+  #sherlocked .subeventName {
+    font-size: 3.5vh;
+  }
+
+  #bridge-the-gap .subeventName {
+    font-size: 3vh;
+  }
+
+  #ontheetch .subeventName {
+    font-size: 3.2vh;
+  }
+
+  #techescape .subeventName {
+    font-size: 3.2vh;
+  }
+
+  #circuitfixer .subeventName {
+    font-size: 3vh;
+  }
+}

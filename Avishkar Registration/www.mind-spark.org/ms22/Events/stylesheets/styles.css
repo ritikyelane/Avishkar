@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+@font-face {
+  font-family: Entanglement;
+  src: url(fonts\Entanglement-rgpRB.ttf);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Mono", monospace;
+  overflow-x: hidden;
+  /* background-color: #090a0f; */
+}
+
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.mainText img {
+  text-align: center;
+  height: 8vh;
+  object-fit: contain;
+}
+
+.mainText {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  overflow-x: hidden;
+}
+
+.mainTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Orbitron";
+  -webkit-text-stroke: 2px #ffffff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.4s linear;
+  opacity: 1;
+  width: 100%;
+}
+
+.mainTitle:hover {
+  opacity: 1;
+  -webkit-text-fill-color: white;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.mainText img {
+  height: 5vh;
+  object-fit: contain;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+
+.moduleName {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.4s linear;
+  opacity: 0.5;
+}
+
+.moduleDescription {
+  padding: 1vw;
+  color: #fff;
+  position: relative;
+  margin-top: 1vh;
+}
+
+.moduleName:hover {
+  opacity: 1;
+  -webkit-text-fill-color: white;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
+  min-height: 25vh;
+  width: 100%;
+  z-index: 99;
+}
+
+.module-top {
+  display: flex;
+}
+
+.collapser {
+  display: none;
+}
+
+.collapsing-button {
+  background-color: transparent;
+}
+
+.collapsing-button:hover {
+  color: #000;
+  transition-duration: 500ms;
+  transform: scale(1.1);
+}
+
+.expander {
+  display: flex;
+}
+
+.expander-button {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.expander-button:hover {
+  color: #000;
+  transition-duration: 500ms;
+  transform: scale(1.1);
+}
+
+.subevents {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subevent-border-container {
+  cursor: default;
+}
+
+.subeventLogo img {
+  width: 10vh;
+  filter: invert(100);
+}
+
+.subeventName {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.4s linear;
+  opacity: 0.5;
+}
+
+.subeventName:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  -webkit-text-fill-color: white;
+}
+
+.subeventDescription {
+  color: #fff;
+  position: relative;
+}
+
+.subeventDescription:hover {
+  transform: scale(1.1);
+}
+
+.explore {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.explore-button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.explore img {
+  filter: invert(100);
+}
+
+.subevents-visible {
+  display: flex;
+  animation-name: fade;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+.module-logo-hidden {
+  display: none;
+}
+
+.expander-hidden {
+  display: none;
+}
+
+.collapser-visible {
+  display: flex;
+  animation-name: fade;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}

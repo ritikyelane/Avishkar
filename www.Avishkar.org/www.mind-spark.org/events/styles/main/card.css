@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Azonix;
+  src: url("../../assets/fonts/Azonix-1VB0.otf") format("opentype");
+}
+
+.parent {
+  width: auto;
+  perspective: 1000px;
+  overflow: hidden;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .parent:hover .card {
+    transform: rotate3d(1, 1, 0, 15deg);
+    translate: 0px 0px -50px;
+  }
+
+  .parent:hover .card .logo .circle2 {
+    transform: translate3d(0, 0, 60px);
+  }
+
+  .parent:hover .card .logo .circle3 {
+    transform: translate3d(0, 0, 80px);
+  }
+
+  .parent:hover .card .logo .circle4 {
+    transform: translate3d(0, 0, 100px);
+  }
+
+  .parent:hover .card .logo .circle5 {
+    transform: translate3d(0, 0, 120px);
+  }
+}
+
+.card {
+  height: 100%;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.glass {
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 8px;
+  border-radius: 55px;
+  border-top-right-radius: 100%;
+  backdrop-filter: blur(5px);
+  transform: translate3d(0px, 0px, 25px);
+  border-left: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+
+.content {
+  padding: 24px 60px 24px 30px;
+  transform: translate3d(0, 0, 26px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.content .title {
+  display: block;
+  font-size: 1.75rem;
+  font-family: "Library";
+  color: transparent;
+  -webkit-text-stroke: 1.25px #fff;
+  z-index: 1000;
+  filter: drop-shadow(0px 0px 10px #bbccff);
+}
+
+.content .text {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  font-size: 0.75rem;
+  width: 65%;
+  font-family: "Azonix";
+}
+
+.content a {
+  text-decoration: none;
+  font-family: "Azonix";
+  font-size: 0.8rem;
+  color: black;
+  padding: 8px 8px;
+  border-radius: 8px;
+  background-color: #ffffff7d;
+  width: 65%;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.content ul li {
+  font-size: 0.75rem;
+  color: #fff;
+  margin: 1px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  position: absolute;
+  transform: translate3d(0, 0%, 30px);
+  background: #fff3;
+  padding: 24px;
+  border-radius: 50%;
+  margin: 16px;
+  right: 0;
+}
+
+.event-img {
+  width: 128px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  .content a {
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    transform: translate3d(0, 50%, 30px);
+    background: #fff3;
+    padding: 24px;
+    border-radius: 50%;
+    margin: 16px;
+    right: 0;
+  }
+
+  .logo .event-img {
+    width: 76px;
+  }
+}

@@ -1,0 +1,517 @@
+:root {
+  --amuzia-color: #8758ff;
+  --avionica-color: #49bfab;
+  --codifica-color: #d36b00;
+  --illuminati-color: #5cb8e4;
+  --hackathon-color: #61d38b;
+  --logica-color: #ffc23c;
+  --potentia-color: #2666cf;
+  --prodigium-color: #fa2fb5;
+  --robotica-color: #7de5ed;
+  --struktura-color: #d3eca7;
+  --substantia-color: #df3e3e;
+  --voltus-color: #2666cf;
+}
+
+#amuzia .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--amuzia-color);
+}
+
+#amuzia .moduleName {
+  color: var(--amuzia-color);
+  -webkit-text-stroke: 2px var(--amuzia-color);
+}
+
+#amuzia .moduleDescription {
+  color: var(--amuzia-color);
+}
+
+#amuzia .expander-button {
+  border: 1px solid var(--amuzia-color);
+  color: var(--amuzia-color);
+}
+
+#amuzia .expander-button:hover {
+  background-color: var(--amuzia-color);
+  color: black;
+}
+
+#amuzia .collapsing-button {
+  border: 1px solid var(--amuzia-color);
+  color: var(--amuzia-color);
+}
+
+#amuzia .collapsing-button:hover {
+  background-color: var(--amuzia-color);
+  color: black;
+}
+
+/* #amuzia .subevent-border-animation span:first-child {
+  background: var(--amuzia-color);
+}
+
+#amuzia .subevent-border-animation span:last-child:after {
+  background: var(--amuzia-color); */
+/* } */
+#avionica .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--avionica-color);
+}
+
+#avionica .moduleName {
+  color: var(--avionica-color);
+  -webkit-text-stroke: 2px var(--avionica-color);
+}
+
+#avionica .moduleDescription {
+  color: var(--avionica-color);
+}
+
+#avionica .expander-button {
+  border: 1px solid var(--avionica-color);
+  color: var(--avionica-color);
+}
+
+#avionica .expander-button:hover {
+  background-color: var(--avionica-color);
+  color: black;
+}
+
+#avionica .collapsing-button {
+  border: 1px solid var(--avionica-color);
+  color: var(--avionica-color);
+}
+
+#avionica .collapsing-button:hover {
+  background-color: var(--avionica-color);
+  color: black;
+}
+
+/* #avionica .subevent-border-animation span:first-child {
+  background: var(--avionica-color);
+}
+
+#avionica .subevent-border-animation span:last-child:after {
+  background: var(--avionica-color);
+} */
+
+#codifica .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--codifica-color);
+}
+
+#codifica .moduleName {
+  color: var(--codifica-color);
+  -webkit-text-stroke: 2px var(--codifica-color);
+}
+
+#codifica .moduleDescription {
+  color: var(--codifica-color);
+}
+
+#codifica .expander-button {
+  border: 1px solid var(--codifica-color);
+  color: var(--codifica-color);
+}
+
+#codifica .expander-button:hover {
+  background-color: var(--codifica-color);
+  color: black;
+}
+
+#codifica .collapsing-button {
+  border: 1px solid var(--codifica-color);
+  color: var(--codifica-color);
+}
+
+#codifica .collapsing-button:hover {
+  background-color: var(--codifica-color);
+  color: black;
+}
+
+#codifica .subevent-border-animation span:first-child {
+  background: var(--codifica-color);
+}
+
+#codifica .subevent-border-animation span:last-child:after {
+  background: var(--codifica-color);
+}
+
+#illuminati .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--illuminati-color);
+}
+
+#illuminati .moduleName {
+  color: var(--illuminati-color);
+  -webkit-text-stroke: 2px var(--illuminati-color);
+}
+
+#illuminati .moduleDescription {
+  color: var(--illuminati-color);
+}
+
+#illuminati .expander-button {
+  border: 1px solid var(--illuminati-color);
+  color: var(--illuminati-color);
+}
+
+#illuminati .expander-button:hover {
+  background-color: var(--illuminati-color);
+  color: black;
+}
+
+#illuminati .collapsing-button {
+  border: 1px solid var(--illuminati-color);
+  color: var(--illuminati-color);
+}
+
+#illuminati .collapsing-button:hover {
+  background-color: var(--illuminati-color);
+  color: black;
+}
+
+/* #illuminati .subevent-border-animation span:first-child {
+  background: var(--illuminati-color);
+} */
+
+#illuminati .subevent-border-animation span:last-child:after {
+  background: var(--illuminati-color);
+}
+
+#hackathon .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--hackathon-color);
+}
+
+#hackathon .moduleName {
+  color: var(--hackathon-color);
+  -webkit-text-stroke: 2px var(--hackathon-color);
+}
+
+#hackathon .moduleDescription {
+  color: var(--hackathon-color);
+}
+
+#hackathon .expander-button {
+  border: 1px solid var(--hackathon-color);
+  color: var(--hackathon-color);
+}
+
+#hackathon .expander-button:hover {
+  background-color: var(--hackathon-color);
+  color: black;
+}
+
+#hackathon .collapsing-button {
+  border: 1px solid var(--hackathon-color);
+  color: var(--hackathon-color);
+}
+
+#hackathon .collapsing-button:hover {
+  background-color: var(--hackathon-color);
+  color: black;
+}
+
+#hackathon .subevent-border-animation span:first-child {
+  background: var(--hackathon-color);
+}
+
+#hackathon .subevent-border-animation span:last-child:after {
+  background: var(--hackathon-color);
+}
+
+#logica .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--logica-color);
+}
+
+#logica .moduleName {
+  color: var(--logica-color);
+  -webkit-text-stroke: 2px var(--logica-color);
+}
+
+#logica .moduleDescription {
+  color: var(--logica-color);
+}
+
+#logica .expander-button {
+  border: 1px solid var(--logica-color);
+  color: var(--logica-color);
+}
+
+#logica .expander-button:hover {
+  background-color: var(--logica-color);
+  color: black;
+}
+
+#logica .collapsing-button {
+  border: 1px solid var(--logica-color);
+  color: var(--logica-color);
+}
+
+#logica .collapsing-button:hover {
+  background-color: var(--logica-color);
+  color: black;
+}
+
+#logica .subevent-border-animation span:first-child {
+  background: var(--logica-color);
+}
+
+#logica .subevent-border-animation span:last-child:after {
+  background: var(--logica-color);
+}
+
+#potentia .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--potentia-color);
+}
+
+#potentia .moduleName {
+  color: var(--potentia-color);
+  -webkit-text-stroke: 2px var(--potentia-color);
+}
+
+#potentia .moduleDescription {
+  color: var(--potentia-color);
+}
+
+#potentia .expander-button {
+  border: 1px solid var(--potentia-color);
+  color: var(--potentia-color);
+}
+
+#potentia .expander-button:hover {
+  background-color: var(--potentia-color);
+  color: black;
+}
+
+#potentia .collapsing-button {
+  border: 1px solid var(--potentia-color);
+  color: var(--potentia-color);
+}
+
+#potentia .collapsing-button:hover {
+  background-color: var(--potentia-color);
+  color: black;
+}
+
+#potentia .subevent-border-animation span:first-child {
+  background: var(--potentia-color);
+}
+
+#potentia .subevent-border-animation span:last-child:after {
+  background: var(--potentia-color);
+}
+
+#prodigium .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--prodigium-color);
+}
+
+#prodigium .moduleName {
+  color: var(--prodigium-color);
+  -webkit-text-stroke: 2px var(--prodigium-color);
+}
+
+#prodigium .moduleDescription {
+  color: var(--prodigium-color);
+}
+
+#prodigium .expander-button {
+  border: 1px solid var(--prodigium-color);
+  color: var(--prodigium-color);
+}
+
+#prodigium .expander-button:hover {
+  background-color: var(--prodigium-color);
+  color: black;
+}
+
+#prodigium .collapsing-button {
+  border: 1px solid var(--prodigium-color);
+  color: var(--prodigium-color);
+}
+
+#prodigium .collapsing-button:hover {
+  background-color: var(--prodigium-color);
+  color: black;
+}
+
+#prodigium .subevent-border-animation span:first-child {
+  background: var(--prodigium-color);
+}
+
+#prodigium .subevent-border-animation span:last-child:after {
+  background: var(--prodigium-color);
+}
+
+#robotica .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--robotica-color);
+}
+
+#robotica .moduleName {
+  color: var(--robotica-color);
+  -webkit-text-stroke: 2px var(--robotica-color);
+}
+
+#robotica .moduleDescription {
+  color: var(--robotica-color);
+}
+
+#robotica .expander-button {
+  border: 1px solid var(--robotica-color);
+  color: var(--robotica-color);
+}
+
+#robotica .expander-button:hover {
+  background-color: var(--robotica-color);
+  color: black;
+}
+
+#robotica .collapsing-button {
+  border: 1px solid var(--robotica-color);
+  color: var(--robotica-color);
+}
+
+#robotica .collapsing-button:hover {
+  background-color: var(--robotica-color);
+  color: black;
+}
+
+#robotica .subevent-border-animation span:first-child {
+  background: var(--robotica-color);
+}
+
+#robotica .subevent-border-animation span:last-child:after {
+  background: var(--robotica-color);
+}
+
+#struktura .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--struktura-color);
+}
+
+#struktura .moduleName {
+  color: var(--struktura-color);
+  -webkit-text-stroke: 2px var(--struktura-color);
+}
+
+#struktura .moduleDescription {
+  color: var(--struktura-color);
+}
+
+#struktura .expander-button {
+  border: 1px solid var(--struktura-color);
+  color: var(--struktura-color);
+}
+
+#struktura .expander-button:hover {
+  background-color: var(--struktura-color);
+  color: black;
+}
+
+#struktura .collapsing-button {
+  border: 1px solid var(--struktura-color);
+  color: var(--struktura-color);
+}
+
+#struktura .collapsing-button:hover {
+  background-color: var(--struktura-color);
+  color: black;
+}
+
+#struktura .subevent-border-animation span:first-child {
+  background: var(--struktura-color);
+}
+
+#struktura .subevent-border-animation span:last-child:after {
+  background: var(--struktura-color);
+}
+
+#substantia .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--substantia-color);
+}
+
+#substantia .moduleName {
+  color: var(--substantia-color);
+  -webkit-text-stroke: 2px var(--substantia-color);
+}
+
+#substantia .moduleDescription {
+  color: var(--substantia-color);
+}
+
+#substantia .expander-button {
+  border: 1px solid var(--substantia-color);
+  color: var(--substantia-color);
+}
+
+#substantia .expander-button:hover {
+  background-color: var(--substantia-color);
+  color: black;
+}
+
+#substantia .collapsing-button {
+  border: 1px solid var(--substantia-color);
+  color: var(--substantia-color);
+}
+
+#substantia .collapsing-button:hover {
+  background-color: var(--substantia-color);
+  color: black;
+}
+
+#substantia .subevent-border-animation span:first-child {
+  background: var(--substantia-color);
+}
+
+#substantia .subevent-border-animation span:last-child:after {
+  background: var(--substantia-color);
+}
+
+#voltus .moduleName {
+  opacity: 1;
+  -webkit-text-fill-color: var(--voltus-color);
+}
+
+#voltus .moduleName {
+  color: var(--voltus-color);
+  -webkit-text-stroke: 2px var(--voltus-color);
+}
+
+#voltus .moduleDescription {
+  color: var(--voltus-color);
+}
+
+#voltus .expander-button {
+  border: 1px solid var(--voltus-color);
+  color: var(--voltus-color);
+}
+
+#voltus .expander-button:hover {
+  background-color: var(--voltus-color);
+  color: black;
+}
+
+#voltus .collapsing-button {
+  border: 1px solid var(--voltus-color);
+  color: var(--voltus-color);
+}
+
+#voltus .collapsing-button:hover {
+  background-color: var(--voltus-color);
+  color: black;
+}
+
+#voltus .subevent-border-animation span:first-child {
+  background: var(--voltus-color);
+}
+
+#voltus .subevent-border-animation span:last-child:after {
+  background: var(--voltus-color);
+}
